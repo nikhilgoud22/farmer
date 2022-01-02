@@ -1,0 +1,150 @@
+import React from "react";
+import "../allDashboard_files.css";
+import Card from "@mui/material/Card";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import { Typography, Button, Grid } from "@mui/material";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+
+function DonationList() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  return (
+    <div>
+      <h1 style={{ textAlign: "left", marginLeft: "20px" }}>Donation List</h1>
+      <div className="card-div">
+        <Card className="card" onClick={handleClickOpen}>
+          <div className="flex">
+            <Typography className="card-title">Farmer Name</Typography>
+            <AccountCircle className="icons" />
+          </div>
+          <div style={{ textAlign: "left" }}>
+            <label>Phone: &nbsp;</label>
+            <span>9876543210</span>
+            <br />
+            <label>Place: &nbsp;</label>
+            <span>Telangana</span>
+            <br />
+            <label>Amount: &nbsp;</label>
+            <span>10,000</span>
+            <br />
+          </div>
+        </Card>
+        <Card className="card2" onClick={handleClickOpen}>
+          <div className="flex">
+            <Typography className="card-title">Farmer Name</Typography>
+            <AccountCircle className="icons" />
+          </div>
+          <div style={{ textAlign: "left" }}>
+            <label>Phone: &nbsp;</label>
+            <span>9876543210</span>
+            <br />
+            <label>Place: &nbsp;</label>
+            <span>Telangana</span>
+            <br />
+            <label>Amount: &nbsp;</label>
+            <span>10,000</span>
+            <br />
+          </div>
+        </Card>
+        <Card className="card3" onClick={handleClickOpen}>
+          <div className="flex">
+            <Typography className="card-title">Farmer Name</Typography>
+            <AccountCircle className="icons" />
+          </div>
+
+          <div style={{ textAlign: "left" }}>
+            <label>Phone: &nbsp;</label>
+            <span>9876543210</span>
+            <br />
+            <label>Place: &nbsp;</label>
+            <span>Telangana</span>
+            <br />
+            <label>Amount: &nbsp;</label>
+            <span>10,000</span>
+            <br />
+          </div>
+        </Card>
+      </div>
+      <div>
+        <Dialog
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="alert-dialog-title"
+          aria-describedby="alert-dialog-description"
+        >
+          <DialogTitle id="alert-dialog-title">{"Donation Data"}</DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-description">
+              <Grid container spacing={0}>
+                <Grid item={12} sm={12} md={6} lg={6}>
+                  <label>
+                    <b>Name:</b> &nbsp;
+                  </label>
+                  <span>Farmer Name</span>
+                </Grid>
+                <Grid item={12} sm={12} md={6} lg={6}>
+                  <label>
+                    <b>Phone:</b> &nbsp;
+                  </label>
+                  <span>123456789</span>
+                </Grid>
+                <Grid item={12} sm={12} md={6} lg={6}>
+                  <label>
+                    <b>Date:</b> &nbsp;
+                  </label>
+                  <span>10/6/2021</span>
+                </Grid>
+                <Grid item={12} sm={12} md={6} lg={6}>
+                  <label>
+                    <b>Area:</b> &nbsp;
+                  </label>
+                  <span>Telangana</span>
+                </Grid>
+                <Grid item={12} sm={12} md={6} lg={6}>
+                  <label>
+                    <b>Deliveried Farmer:</b> &nbsp;
+                  </label>
+                  <span>Nikhil</span>
+                </Grid>
+                <Grid item={12} sm={12} md={6} lg={6}>
+                  <label>
+                    <b>Location:</b> &nbsp;
+                  </label>
+                  <span>
+                    123/abc,
+                    <br />
+                    <Typography style={{ marginLeft: "80px" }}>
+                      xyz Colony,abc Nagar,
+                      <br />
+                      hyderabad, karimnagar,
+                      <br />
+                      Telangana - 500001
+                    </Typography>
+                  </span>
+                </Grid>
+              </Grid>
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} autoFocus className="ar-cancel-btn">
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </div>
+    </div>
+  );
+}
+
+export default DonationList;

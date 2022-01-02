@@ -1,0 +1,110 @@
+.login-block {
+  background: #de6262;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, orange, green);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, orange, green);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  float: left;
+  width: 100%;
+}
+
+.banner-sec {
+  background: url(https://static.pexels.com/photos/33972/pexels-photo.jpg)
+    no-repeat left bottom;
+  background-size: cover;
+  min-height: 500px;
+  border-radius: 0 10px 10px 0;
+  padding: 0;
+}
+
+.container {
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 15px 20px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 2%;
+}
+
+.login-sec {
+  padding: 50px 30px;
+  position: relative;
+}
+
+.login-sec .copy-text {
+  position: absolute;
+  width: 80%;
+  bottom: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.login-sec .copy-text i {
+  color: #feb58a;
+}
+
+.login-sec .copy-text a {
+  color: #e36262;
+}
+
+.login-sec h2 {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 30px;
+  color: #de6262;
+}
+
+.login-sec h2:after {
+  content: " ";
+  width: 100px;
+  height: 5px;
+  background: #feb58a;
+  display: block;
+  margin-top: 20px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input {
+  height: 16px;
+  padding: 8px;
+  margin-top: 24px;
+}
+.btn_login {
+  background: #de6262 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  margin-left: 70px !important;
+  padding: 8px 24px !important;
+  text-transform: capitalize !important;
+}
+/* -----------------Carousel-------------------- */
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.donate_btn {
+  height: 32px !important;
+  padding: 12px 24px !important;
+  background-color: orange !important;
+  color: white !important;
+  float: right !important;
+}
+.view_btn {
+  height: 32px !important;
+  padding: 12px 24px !important;
+  background-color: green !important;
+  color: white !important;
+}
+.text_thanks {
+  font-size: 48px !important;
+  font-family: "Courier New", Courier, monospace !important;
+  margin-left: auto !important;
+  margin-top: 24px !important;
+}
+
+.css-rh92k-MuiPaper-root-MuiMobileStepper-root {
+  background-color: #f7f7f7 !important;
+}

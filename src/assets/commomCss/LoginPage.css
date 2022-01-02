@@ -1,0 +1,35 @@
+.fields_Main_div {
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+}
+.login_card {
+  height: auto;
+  padding: 5% 10%;
+  margin: 9% 10%;
+  text-align: left;
+  border-radius: 30px !important;
+  /* transform: scaleX(-1); */
+}
+.login_card h1 {
+  text-align: center;
+}
+.login_card label {
+  font-size: 17px;
+  font-weight: 500;
+}
+.login_card input {
+  width: 95%;
+  height: 24px;
+  padding: 8px;
+  margin-top: 7px;
+}
+.login_card Button {
+  background-color: rgb(89, 233, 33);
+  color: #fff;
+  padding: 2% 6%;
+  margin-left: 40%;
+  margin-top: 8px;
+}
+.login_card Button:hover {
+  background-color: rgb(89, 233, 33);
+}
